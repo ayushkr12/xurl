@@ -1,5 +1,13 @@
 ## Usage
 
+### Install
+
+```bash
+go get github.com/ayushkr12/xurl@latest
+```
+
+### Import & Use
+
 ```go
 package main
 
