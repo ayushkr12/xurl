@@ -4,14 +4,14 @@ import (
 	"testing"
 )
 
-func TestExtractURLs(t *testing.T) {
+func TestExtractWords(t *testing.T) {
 	rawURLs := []string{
 		"https://example.com/api/core/?query=param&query=param2&query2=param3#fragment",
 		"https://another.com/path/to/resource?foo=bar&baz=qux",
 		"https://example.com/api/core/?query=param",
 	}
 
-	words, errs := ExtractURLs(rawURLs)
+	words, errs := ExtractWords(rawURLs)
 
 	if len(errs) > 0 {
 		for _, err := range errs {

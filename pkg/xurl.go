@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-func ExtractURLs(rawURLs []string) ([]string, []error) {
+func ExtractWords(rawURLs []string) ([]string, []error) {
 	seen := make(map[string]struct{})
 	var wordlist []string
 	var errs []error
